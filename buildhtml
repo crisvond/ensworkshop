@@ -1,0 +1,44 @@
+### 2. **Building a Simple Website (No Coding Experience Needed!)**
+
+---
+
+#### **What We’ll Cover:**
+
+##### **HTML (HyperText Markup Language)**:
+- **Overview**: **HTML** is the backbone of any website. It’s the standard markup language used to create the structure of web pages, defining elements like headings, paragraphs, images, links, and more. HTML is a set of tags that tells the browser how to display content on a page. 
+- **Tags and Structure**: Every HTML document starts with a `<!DOCTYPE html>` declaration and consists of tags like `<html>`, `<head>`, `<body>`, and more. These tags enclose content to organize how text, images, and other media appear. For example, `<h1>` creates a large heading, and `<p>` creates a paragraph.
+- **No Experience Needed**: Even if you’ve never coded before, HTML is beginner-friendly. Each tag has a clear purpose, and during the workshop, we will guide you through creating your first simple web page using basic HTML. You’ll learn how to create headings, add images, and link to other pages or websites.
+
+- **Curious Fact**: HTML was first developed by **Tim Berners-Lee** in **1993** as a way to display text and images on the internet. It has evolved since then, but remains one of the most fundamental technologies of the web. Its simplicity is part of the reason the web grew so quickly in its early days!
+
+##### **CSS (Cascading Style Sheets)**:
+- **Overview**: **CSS** is used to control the visual presentation of a web page, separating style (how things look) from structure (HTML). With CSS, you can change colors, adjust font sizes, align elements, and even create dynamic layouts. 
+- **How It Works**: CSS works by selecting HTML elements and applying style rules to them. For example, you might use CSS to change the color of all `<h1>` headings to blue by writing: `h1 { color: blue; }`. This allows for more control over the look and feel of the website, without having to modify the HTML directly.
+- **What We’ll Cover**: In this workshop, you’ll learn how to add basic styling to your website, such as changing background colors, fonts, and text alignment. We’ll also show you how to make your website responsive, meaning it looks good on different screen sizes, including mobile.
+- **Curious Fact**: **CSS3**, the latest version of CSS, introduced powerful features like animations, gradients, and even flexible layouts using **Flexbox** and **Grid**. Before CSS, websites were mostly text-based and lacked visual appeal!
+
+##### **Website Templates**:
+- **Overview**: If you’re not comfortable starting from scratch, don’t worry—we’ll provide pre-made HTML and CSS templates. These templates will give you a framework to work from, with sections for headings, images, text, and navigation already set up. All you have to do is customize them by adding your own content and making tweaks to the design.
+- **How It Works**: Templates are like ready-made websites where the basic structure is already built. You can change text, add new sections, and personalize the design using CSS. During the workshop, we’ll show you how to edit these templates, making it easy to have a professional-looking website with minimal effort.
+
+- **Curious Fact**: Website templates have been around since the early 2000s and are widely used by beginners and professionals alike. Platforms like **WordPress** have made templates a key feature for anyone who wants to create a website without coding from scratch. Today, even big companies rely on templates to speed up the web development process!
+
+---
+
+#### **Why It Matters**:
+
+Building a website using **HTML** and **CSS** is an essential skill for anyone who wants to create their own online presence. Even in the Web3 space, where decentralized technologies rule, the **front-end of websites**—what users see and interact with—is still built using HTML and CSS.
+
+By learning how to structure and style a web page:
+- **You gain control over your digital identity**: Whether it’s a personal blog, portfolio, or decentralized project, you’ll be able to create and customize your online space.
+- **You get a practical, hands-on introduction to web development**: HTML and CSS are foundational to understanding how the web works. Learning them will make it easier to explore other technologies, such as JavaScript (for interactivity) or Web3 frameworks for integrating blockchain features.
+- **You bridge the gap between Web2 and Web3**: Decentralized websites hosted on **IPFS** still require a web interface (built using HTML and CSS), so these skills are crucial even in a decentralized future.
+
+At the end of this section, you’ll have a functioning website—a real, tangible result that you can see and share. More importantly, you’ll take your first step toward building more complex web applications, whether they’re on the traditional web or decentralized platforms.
+
+---
+
+#### **Sources**:
+- [HTML and Web Development by W3C](https://www.w3.org/html/)
+- [CSS Basics: Styling the Web](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [HTML's History: From Tim Berners-Lee to the Modern Web](https://www.history.com/topics/inventions/world-wide-web)
