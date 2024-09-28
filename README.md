@@ -138,6 +138,206 @@ window.onclick = function(event) {
     }
 }
 ```
+### ** How to Create a GitHub Account, Create a New Repository, and Add an HTML File**
+
+This guide will walk you through the steps to create a **GitHub account**, set up a **new repository**, and **add an HTML file** to the repository. This process will be useful when integrating GitHub with platforms like **Fleek** for hosting.
+
+---
+
+### **Step 1: Create a GitHub Account**
+
+1. **Go to GitHub’s Website**:
+   - Visit [https://github.com](https://github.com).
+
+2. **Sign Up**:
+   - Click the **"Sign Up"** button.
+   - Enter your email address, create a username, and choose a password.
+   - GitHub may ask you to solve a puzzle to verify that you are human.
+
+3. **Set Preferences**:
+   - Choose whether you'd like to receive updates from GitHub.
+   - Select the **free account** option, which gives you access to all necessary features.
+
+4. **Email Verification**:
+   - After signing up, GitHub will send you an email for verification.
+   - Open the email, click the verification link, and log in.
+
+---
+
+### **Step 2: Create a New GitHub Repository**
+
+1. **Go to Your GitHub Dashboard**:
+   - Once logged in, click on your profile icon in the top right, and select **"Your Repositories"** from the dropdown menu.
+
+2. **Create a New Repository**:
+   - On the **"Your Repositories"** page, click the green **"New"** button.
+
+3. **Fill in Repository Details**:
+   - **Repository Name**: Enter a name for your repository (e.g., `my-website`).
+   - **Description** (Optional): You can add a brief description of the repository.
+   - **Public or Private**: Choose whether you want the repository to be public or private.
+   - **Initialize the repository with a README**: Check this box if you want GitHub to create a README file automatically (optional).
+
+4. **Click "Create Repository"**:
+   - Once all fields are filled, click **"Create Repository"**.
+
+---
+
+### **Step 3: Add an HTML File Manually to the Repository**
+
+1. **Go to Your Repository**:
+   - After creating the repository, you will be directed to your repository's page (e.g., `https://github.com/username/my-website`).
+
+2. **Add a New File**:
+   - On your repository page, click the **"Add file"** dropdown button and select **"Create new file"**.
+
+3. **Name Your HTML File**:
+   - In the input field that appears, type the name for your file (e.g., `index.html`). 
+     - `index.html` is typically the main file for a website.
+
+4. **Add Your HTML Code**:
+   - In the large text editor below, manually add your HTML code. For example, here’s a simple HTML template:
+
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>My Website</title>
+   </head>
+   <body>
+       <h1>Welcome to My Website!</h1>
+       <p>This is my first website hosted on GitHub.</p>
+   </body>
+   </html>
+   ```
+
+5. **Commit the New File**:
+   - Scroll down to the **"Commit new file"** section.
+   - In the first field, write a brief description of the file (e.g., `Add index.html`).
+   - Make sure **"Commit directly to the main branch"** is selected.
+
+6. **Click "Commit New File"**:
+   - Click the green **"Commit new file"** button to save your file into the repository.
+
+---
+
+### **Step 4: Connect Your GitHub Repository to Fleek**
+
+1. **Log into Fleek**
+2. **Create a New Site**:
+   - Click the **"Create New Site"** button and select **GitHub** as the source.
+3. **Authorize Fleek**:
+   - Authorize Fleek to access your GitHub account.
+4. **Select Your Repository**:
+   - Choose the newly created repository (e.g., `my-website`) to deploy it to Fleek.
+
+---
+
+### **Conclusion**:
+You have now successfully created a GitHub account, set up a new repository, added an HTML file manually, and are ready to connect it to Fleek for hosting.
+
+---
+
+## **Using Fleek for Domain and ENS Integration**
+
+This document will guide you through the process of adding a **domain** or **ENS** (Ethereum Name Service) to your Fleek-hosted website. Fleek offers a user-friendly platform to manage both traditional DNS domains and decentralized ENS domains, ensuring your content is easily accessible to your users.
+
+---
+
+### **What is Fleek?**
+Fleek is a Web3 hosting platform that makes it simple to host websites and applications on decentralized networks like IPFS (InterPlanetary File System). It also supports both traditional DNS domains and **ENS domains**—a decentralized alternative to DNS that resolves `.eth` domains on the Ethereum network.
+
+### **Domains on Fleek**
+
+#### **1. ENS Domains on Fleek**
+An **ENS domain** (`.eth`) is a decentralized, Ethereum-based alternative to DNS. With ENS, you can map various records (IPFS hashes, websites, wallet addresses) to your `.eth` domain. For instance, a site hosted on IPFS can be mapped to `yourens.eth`, making it accessible to users who can resolve ENS domains.
+
+##### **How ENS Resolution Works**
+For an ENS domain to resolve, users need a compatible browser or extension (e.g., **MetaMask**), or they can use public gateways like **ETH Limo**. By appending `.limo` to your ENS domain (`yourens.eth.limo`), the ENS name is resolved via a regular HTTPS request.
+
+---
+
+### **Step-by-Step Guide: Adding an ENS Domain on Fleek**
+
+#### **Step 1: Create a Site on Fleek**
+Before you can add a domain, you need to have a site deployed on Fleek. Follow these steps:
+1. Log into Fleek https://fleek.xyz/.
+2. Click **"Create New Site"** and follow the instructions to upload your HTML files (via GitHub).
+3. Once deployed, go to your site’s **Site Overview** page.
+
+#### **Step 2: Add Your ENS Domain**
+1. Navigate to the **Settings** section of your site on Fleek.
+2. Go to the **Domains** tab.
+3. Under the **ENS Domains** section, enter your ENS domain (e.g., `yourens.eth`) and click **Add ENS Domain**.
+   - Fleek will validate the domain to ensure it’s not already added to another site.
+4. Once validated, choose how to set the ENS **content hash**—this is where you map the ENS domain to the IPFS content.
+
+---
+
+### **Step 3: Setting the ENS Content Hash**
+
+##### **Option 1: Automatic ENS Configuration (Recommended)**
+1. **Automatic Configuration**: Fleek automatically manages the ENS configuration by interacting with your Ethereum wallet.
+2. Choose between **IPFS** or **IPNS** as the content hash record:
+   - **IPFS**: If the site won’t be updated often (requires gas fees for updates).
+   - **IPNS**: Ideal for frequently updated sites (does not require gas fees for updates).
+3. Fleek will ask you to sign the transaction to set the content hash.
+4. Once configured, your ENS domain will be live, and your site will be accessible via gateways like `yourens.eth.limo`.
+
+**Note**: You need access to the wallet that owns the ENS record to use automatic configuration.
+
+##### **Option 2: Manual ENS Configuration**
+If you prefer to manually manage the ENS record (or don’t have access to the wallet controlling the ENS), follow these steps:
+1. In Fleek, choose the **manual option** to copy the content hash.
+2. Visit the [ENS Manager](https://app.ens.domains/) and set the content hash:
+   - Choose **IPFS** or **IPNS**, and copy the corresponding content hash from Fleek.
+   - In the **Content** field on the ENS Manager, paste the content hash.
+   - Confirm and complete the Ethereum transaction to set the hash.
+
+After completing the manual setup, return to Fleek and click **"OK! I have added it"** to verify the configuration.
+
+---
+
+### **Step 4: Access Your Site via ENS**
+Once your ENS domain is configured, your site can be accessed using:
+- **ENS-enabled browsers or extensions**: E.g., `yourens.eth` (resolved by MetaMask or ENS-compatible browsers).
+- **Public Gateways**: E.g., `yourens.eth.limo` (HTTPS resolution using ETH Limo).
+
+---
+
+### **Traditional DNS Domain Setup on Fleek**
+
+Fleek also supports traditional **DNS domains**. To set up a custom DNS domain, follow these steps:
+
+#### **Step 1: Add a Custom Domain**
+1. On your site’s **Site Overview** page, go to **Settings** > **Domains**.
+2. Enter your **custom domain** (e.g., `yourdomain.com`), and Fleek will validate the domain.
+3. Fleek will generate a **pull zone URL** for your site, which serves as a link between the content on IPFS and the custom domain.
+
+#### **Step 2: Configure Your DNS**
+1. Go to your **DNS provider** and add a **CNAME** or **ANAME** record to point your domain to the pull zone URL.
+2. Once set, return to Fleek and click **"OK! I have added it"** to trigger the validation process.
+
+#### **Step 3: Domain Activation**
+After Fleek validates your DNS settings, your custom domain will be marked as **Active**, and your site will be accessible via the custom domain. Fleek automatically updates the DNS when you deploy new content.
+
+---
+
+### **DNSLink Configuration**
+**DNSLink** allows you to map your domain to the most recent IPFS content automatically. To set up DNSLink:
+1. After linking a custom domain to your site, go to the **DNSLink** section in the Fleek dashboard.
+2. Follow the steps to configure DNSLink with your DNS provider.
+3. Once DNSLink is active, your domain will always point to the latest version of your site on IPFS.
+
+---
+
+### **Conclusion**
+
+By using Fleek, setting up both **ENS domains** and **custom DNS domains** becomes straightforward, ensuring that your website is decentralized, resilient, and always accessible. Whether you choose ENS for a fully decentralized experience or traditional DNS, Fleek provides seamless management of your domains, making it easier than ever to deploy Web3 websites.
+
+Feel free to explore Fleek’s platform and leverage its tools to make your decentralized website more robust and secure.
 - **Explanation**: This function checks if the user clicks anywhere outside the modal. If they do, it closes the modal by setting the `display` to `"none"`. The condition `if (event.target == modal)` ensures that the modal only closes if the background overlay is clicked.
 
 
