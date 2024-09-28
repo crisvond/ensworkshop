@@ -140,8 +140,5 @@ window.onclick = function(event) {
 ```
 - **Explanation**: This function checks if the user clicks anywhere outside the modal. If they do, it closes the modal by setting the `display` to `"none"`. The condition `if (event.target == modal)` ensures that the modal only closes if the background overlay is clicked.
 
----
 
-### **Summary**:
-This document explains the basic structure of the **HTML** elements and the associated **JavaScript** that handles the behavior of the donation modal. The HTML defines the content and structure of the webpage, while JavaScript adds interactivity (such as opening and closing the modal). The CSS styles the page, ensuring that it looks professional and user-friendly.
 
