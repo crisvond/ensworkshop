@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Crisvond.eth</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #3f0d40, #24032f);
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .vcard {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .profile-section img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 3px solid white; /* White border around circular image */
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-top: 10px;
+        }
+
+        .bio {
+            font-size: 1.2em;
+            margin: 10px 0;
+            opacity: 0.8;
+        }
+
+        /* Social links styled as blue buttons */
+        .social-links a {
+            background-color: #1DA1F2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #0d8ddb;
+        }
+
+        .donation-button {
+            display: inline-block;
+            background-color: #ff5722;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .donation-button:hover {
+            background-color: #e64a19;
+        }
+
+        /* Projects Section */
+        .projects h2 {
+            font-size: 2.5em;
+            margin: 40px 0 20px;
+        }
+
+        .projects-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 200px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .project-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 2px solid white; /* White border around project image */
+        }
+
+        .project-button {
+            display: block;
+            background-color: #ff5722;
+            padding: 10px 0;
+            margin-top: 10px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .project-button:hover {
+            background-color: #e64a19;
+        }
+
+        /* Modal Styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .modal-content {
+            background-color: #2e2e4a;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            color: white;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover, .close:focus {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .qr-code {
+            margin-top: 15px;
+            width: 150px;
+            height: 150px;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Header -->
+    <header>
+        <h1>Welcome to Crisvond.eth</h1>
+    </header>
+    
+    <!-- vCard Section -->
+    <div class="vcard">
+        <div class="profile-section">
+            <img src="https://pbs.twimg.com/profile_images/1839750229731516416/8zZ1MPvr_400x400.jpg" alt="Your Profile Picture">
+            <h2>Crisvond</h2>
+            <p class="bio">This is a short bio about yourself. You can share your background, interests, and what you're passionate about!</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://twitter.com/yourhandle" target="_blank">X (Twitter)</a>
+            <a href="https://yourwebsite.com" target="_blank">Website</a>
+        </div>
+        
+        <a href="#" id="donate-btn" class="donation-button">Donate</a>
+    </div>
+
+    <!-- New Section: My Projects -->
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="https://pbs.twimg.com/profile_images/1831030244657991680/fFU6LQr5_400x400.jpg" alt="Project 1 Image">
+                <a href="https://project1.com" class="project-button">Project 1</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="project2-placeholder.jpg" alt="Project 2 Image">
+                <a href="https://project2.com" class="project-button">Project 2</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="project3-placeholder.jpg" alt="Project 3 Image">
+                <a href="https://project3.com" class="project-button">Project 3</a>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <img src="project4-placeholder.jpg" alt="Project 4 Image">
+                <a href="https://project4.com" class="project-button">Project 4</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Modal -->
+    <div id="donation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Buy me a Coffee</h2>
+            <p>Send ETH to my address:</p>
+            <p><strong>crisvond.eth</strong> (ENS)</p>
+            <p>Or use our wallet address or scan the QR code:</p>
+            <p><strong>0xYourWalletAddressHere</strong></p>
+            <!-- Placeholder for QR code image -->
+            <img src="your-qr-code.png" alt="QR Code" class="qr-code">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        Keep safe, make sure you are on the right page: <strong>crisvond.eth</strong>
+    </footer>
+
+    <script>
+        // Modal Handling
+        const modal = document.getElementById("donation-modal");
+        const btn = document.getElementById("donate-btn");
+        const span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
