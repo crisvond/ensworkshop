@@ -1,4 +1,4 @@
-# ensworkshop
+# ENS I AM DEFI WORKSHOP
 ### 1. **Introduction to Web3 Domains & Decentralized Hosting**
 
 ---
